@@ -214,6 +214,12 @@ select * from xxx;
 select * from yyy;
 
 
+create table tn_xxx (
+mber_id varchar(64) null primary key,
+name varchar(10)
+
+);
+
 
 
 

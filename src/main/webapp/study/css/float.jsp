@@ -26,8 +26,27 @@
 	<li>xxxxxxxxxxxxxxxxxxxx4</li>
 
 </ul>
+<div style="clear: both;"></div>
+<img alt="xxx" src="http://www.placehold.it/300x300" style="float:left;">
 
+<ul style="float: left;">
+	<li>xxxxxxxxxxxxxxxxxxxx1</li>
+	<li>xxxxxxxxxxxxxxxxxxxx2</li>
+	<li>xxxxxxxxxxxxxxxxxxxx3</li>
+	<li>xxxxxxxxxxxxxxxxxxxx4</li>
 
+</ul>
+<div style="clear: both;"></div>
+<img alt="xxx" src="http://www.placehold.it/200x200x" style="float:left;">
+
+<ul style="float: left;">
+	<li>xxxxxxxxxxxxxxxxxxxx1</li>
+	<li>xxxxxxxxxxxxxxxxxxxx2</li>
+	<li>xxxxxxxxxxxxxxxxxxxx3</li>
+	<li>xxxxxxxxxxxxxxxxxxxx4</li>
+
+</ul>
+<div style="clear: both;"></div>
 
 
 </body>

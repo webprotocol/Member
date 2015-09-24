@@ -84,7 +84,7 @@
 </bean>
 
 <tx:annotation-driven transaction-manager="transactionManager" order="10"/>
-<aop:aspectj-autoproxy/>
+<aop:aspectj-autoproxy proxy-target-class="true"/>
 
 <bean id="loggingAspect" class="com.webapp.aspect.LoggingAspect">
 </bean>

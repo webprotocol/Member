@@ -8,15 +8,51 @@
 <title>view.jsp</title>
 <%@ include file="/WEB-INF/views/common.jspf" %>
 <style type="text/css">
+	@keyframes lank {
+		from {
+			transform : rotateX(180deg);
+		}
+		to {
+			transform : rotateX(0deg);
+		}
+	}
+	.lank {
+		animation: lank 1s;
+	}
+	
 	
 </style>
 <script type="text/javascript">
-
+$(document).ready(function() {
+	$('h1').click(function() {
+		$.getJSON('member', function(data) {
+			console.log(data);
+			$('#memberlist').html('');
+			
+			$.each(data, function(index, m) {
+				console.log(m.name + " " + m.email);
+// 				$('#memberlist').append('<li class="lank">' + m.name + '</li>');
+				$('<li class="lank">' + m.name + '</li>').css('animation-delay', index + 's')
+														 .appendTo('#memberlist');
+				
+			});
+		});
+	});
+	
+	$('#memberlist').dblclick(function() {
+		$(this).html('');
+	});
+	
+});
 
 </script>
 </head>
 <body>
 <h1>view</h1>
+<ol id="memberlist">
+
+</ol>
+
 
 
 </body>
